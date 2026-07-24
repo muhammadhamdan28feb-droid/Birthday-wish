@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="theme-color" content="#FFE3EF" />
+<title>A Little Surprise For You 🎁</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div id="app">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div id="ambient"></div>
+
+  <button id="music-btn" aria-label="Toggle music">
+    <span class="note">🔇</span>
+  </button>
+
+  <div id="stage">
+
+    <!-- WELCOME SCREEN -->
+    <section class="screen active" id="screen-welcome">
+      <div class="cat-stage" id="welcome-cat-stage">
+        <!-- cats injected by JS -->
+      </div>
+      <div class="welcome-badge">A little something for you</div>
+      <h1 class="welcome-title">Hey <span id="welcome-name">Bestie</span>... 👀❤️<br/>I made something special for you.</h1>
+      <p class="welcome-sub">Tap the button and reveal your surprise one little chapter at a time.</p>
+      <button class="start-btn" id="start-btn">Open Your Surprise 🎁</button>
+    </section>
+
+    <!-- MESSAGE SCREENS injected by JS -->
+    <div id="message-screens"></div>
+
+  </div>
+</div>
+
+<canvas id="confetti"></canvas>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
